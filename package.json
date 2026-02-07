@@ -17,7 +17,6 @@
     "http",
     "lolcats"
   ],
-
   "type": "module",
   "main": "src/index.ts",
   "files": [
@@ -25,5 +24,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
