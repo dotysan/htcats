@@ -1,0 +1,29 @@
+{
+  "name": "htcats",
+  "version": "0.0.0",
+  "description": "HTTP status codes as cats",
+  "license": "MIT",
+  "author": "Curtis Doty <Curtis@GreenKey.net> (https://github.com/dotysan)",
+  "homepage": "https://github.com/dotysan/htcats#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotysan/htcats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dotysan/htcats/issues"
+  },
+  "keywords": [
+    "cats",
+    "http",
+    "lolcats"
+  ],
+
+  "type": "module",
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
