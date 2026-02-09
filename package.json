@@ -18,12 +18,19 @@
     "lolcats"
   ],
   "type": "module",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "src"
+    "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --showConfig && tsc --listEmittedFiles --diagnostics",
+    "hello": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "release": "npm publish --access public",
+    "bump": "git stash && npm version patch && git stash pop",
+    "push": "git push --follow-tags"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
