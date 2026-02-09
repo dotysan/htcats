@@ -26,13 +26,16 @@
   "scripts": {
     "build": "tsc --showConfig && tsc --listEmittedFiles --diagnostics",
     "hello": "node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "prepublishOnly": "npm run build",
     "release": "npm publish --access public",
     "bump": "git stash && npm version patch && git stash pop",
     "push": "git push --follow-tags"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.18",
     "typescript": "^5.9.3"
   }
 }
