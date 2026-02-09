@@ -2,6 +2,7 @@
   "include": [
     "src/**/*",
   ],
+
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
@@ -12,6 +13,8 @@
     // See also https://aka.ms/tsconfig/module
     // "module": "nodenext",
     "module": "esnext",
+    // "moduleResolution": "bundler",
+    // "moduleResolution": "nodenext",
     "target": "esnext",
     "types": [],
     // For nodejs:
@@ -47,5 +50,9 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+
+    // other stuff
+    // "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,
   }
 }
